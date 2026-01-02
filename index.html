@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+
+  <head>
+    <title>Fractal Javascript Demo</title>
+  </head>
+  <body>
+    <script src="script.js" type="module"></script>
+    <div class="container">
+      <h1 id="demo">Dragon Fractal</h1>
+      <button type="button" id="drawbutton">Draw!</button>
+      <button type="button" id="clear">Clear!</button>
+    </div>
+    <div id="bigbox">
+      <div id="slider-container">
+        <div class="label">Thickness</div>
+        <input
+          type="range"
+          class="slider"
+          id="thickness"
+          min="1"
+          max="5"
+          value="1"
+        />
+        <div id="thickvalue" class="vallabel">1</div>
+      </div>
+      <div id="slider-container">
+        <div class="label">Replications</div>
+        <input
+          type="range"
+          class="slider"
+          id="reps"
+          min="1"
+          max="15"
+          value="15"
+        />
+        <div id="repvalue" class="vallabel">15</div>
+      </div>
+      <div id="slider-container">
+        <div class="label">Angleº</div>
+        <input
+          type="range"
+          class="slider"
+          id="ang"
+          min="0"
+          max="180"
+          value="90"
+        />
+        <div id="angvalue" class="vallabel">90</div>
+      </div>
+      <div id="slider-container">
+        <div class="label">Length</div>
+        <input
+          type="range"
+          class="slider"
+          id="len"
+          min="1"
+          max="100"
+          value="5"
+        />
+        <div id="lenvalue" class="vallabel">5</div>
+      </div>
+      <div id="slider-container">
+        <div class="label">x</div>
+        <input type="number" class="slider" id="x" value="500" />
+      </div>
+      <div id="slider-container">
+        <div class="label">y</div>
+        <input type="number" class="slider" id="y" value="500" />
+      </div>
+      <div id="slider-container">
+        <div class="label">Theta</div>
+        <input
+          type="range"
+          class="slider"
+          id="theta"
+          min="0"
+          max="360"
+          value="0"
+        />
+        <div id="thetavalue" class="vallabel">0</div>
+      </div>
+    </div>
+  </body>
+</html>
