@@ -202,7 +202,7 @@ btn.addEventListener("click", () => {
   set_canvas_width_height();
   getx();
   gety();
-  globalThis.state = { x: x_val, y: y_val, theta: thetaslider.value };
+  globalThis.state = { x: x_val, y: y_val, theta:  (thetaslider.value * Math.PI) / 180 };
   draw();
 });
 
